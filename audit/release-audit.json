@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "selected_files": 502,
+  "local_links_checked": 628,
+  "catalog_bundles_checked": 5,
+  "errors": [],
+  "limits": [
+    "External URL availability is not checked by this offline command.",
+    "Terminology and scientific claims also require human-readable review.",
+    "Original source claims are retained in raw evidence; see the catalog for assessed provenance."
+  ]
+}

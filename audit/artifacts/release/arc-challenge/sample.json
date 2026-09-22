@@ -1,0 +1,70 @@
+[
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "baseline",
+    "dataset_id": "arc-challenge",
+    "gold": "C",
+    "item_id": "Mercury_7175875",
+    "model_label": "qwen-3-8b",
+    "response_completeness": "complete",
+    "response_text": "\n\nC",
+    "run_id": "ARC_CHALLENGE_RUN",
+    "stored_answer": "C"
+  },
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "cue",
+    "dataset_id": "arc-challenge",
+    "gold": "C",
+    "item_id": "Mercury_7175875",
+    "model_label": "qwen-3-8b",
+    "response_completeness": "complete",
+    "response_text": "\n\nC",
+    "run_id": "ARC_CHALLENGE_RUN",
+    "stored_answer": "C"
+  },
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "baseline",
+    "dataset_id": "arc-challenge",
+    "gold": "C",
+    "item_id": "Mercury_SC_408547",
+    "model_label": "qwen-3-8b",
+    "response_completeness": "unknown",
+    "response_text": "",
+    "run_id": "ARC_CHALLENGE_RUN",
+    "stored_answer": null
+  },
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "baseline",
+    "dataset_id": "arc-challenge",
+    "gold": "B",
+    "item_id": "Mercury_7270393",
+    "model_label": "qwen-3-8b",
+    "response_completeness": "unknown",
+    "response_text": "",
+    "run_id": "ARC_CHALLENGE_RUN",
+    "stored_answer": null
+  }
+]

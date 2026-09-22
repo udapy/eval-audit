@@ -1,0 +1,43 @@
+{
+  "step": "C",
+  "status": "complete",
+  "mcp": "2.2.0",
+  "constraint": "mcp>=2,<3",
+  "python": "3.14.7",
+  "os": "darwin",
+  "machine": "arm64",
+  "pins": "docs/mcp-reproducibility.json",
+  "mcp_tests": {"passed": 6, "skipped": 0},
+  "public_suite": {"passed": 137, "command": "python scripts/test_public.py"},
+  "make_check": {"passed": 164, "skipped": 13},
+  "independent_counts": {
+    "transfer_fixture_rows": 32,
+    "transfer_fixture_comparisons": 2,
+    "isolated_report_findings": 16,
+    "isolated_report_records": 32,
+    "g4_status": "NOT_ESTABLISHED"
+  },
+  "clean_install": {
+    "stage": ".tmp/mcp-isolated-20260922T143008fZ",
+    "installed_from": "venv site-packages",
+    "audit_id": "1df9511b24cf4855ad7d6381fdcbcf37",
+    "record_count": 32,
+    "finding_count": 16,
+    "model_runs_executed": 0,
+    "report_chars": 12258
+  },
+  "inspector_cli": {
+    "mode": "--cli --protocol-era auto",
+    "tools_listed": ["export_report", "get_finding", "inspect_bundle", "run_audit"],
+    "audit_id": "aaae76abf96b4b718e89e1207c8d8dac",
+    "finding_count": 16,
+    "model_runs_executed": 0,
+    "summary_contains_response_text": false,
+    "resource_read": "audit://aaae76abf96b4b718e89e1207c8d8dac/report/markdown",
+    "browser_ui_opened": false,
+    "home_catalog_server_count_after": 0
+  },
+  "review": "No separate reviewer. Spec checked with the SDK stdio client, a clean public install, make check, and the Inspector CLI.",
+  "no_model_execution": true,
+  "no_publication": true
+}

@@ -1,0 +1,1395 @@
+{
+  "coverage": [
+    {
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "full_split": true,
+      "rows_checked": 100,
+      "split": "test"
+    },
+    {
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "full_split": true,
+      "rows_checked": 378,
+      "split": "test"
+    },
+    {
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "full_split": true,
+      "rows_checked": 216,
+      "split": "test"
+    },
+    {
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "full_split": true,
+      "rows_checked": 1172,
+      "split": "test"
+    }
+  ],
+  "external_and_balanced_items_equal_after_prompt_prefix_removal": true,
+  "format_normalization": "Remove only an initial 'Question: ' or 'Q: '; split A) through D) lines. No content, case, whitespace, option order, or gold normalization.",
+  "items": [
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs01",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs02",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs03",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs04",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs05",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs06",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs07",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs08",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs09",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs10",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em01",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em02",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em03",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em04",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em05",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em06",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em07",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em08",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em09",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "external-eval",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em10",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs01",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs02",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs03",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs04",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs05",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs06",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs07",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs08",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs09",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-security",
+      "local_item_id": "cs10",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em01",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em02",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em03",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em04",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em05",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em06",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em07",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em08",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em09",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "exact_match": false,
+      "local_dataset_id": "mmlu-math",
+      "local_item_id": "em10",
+      "matched_rows": [],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_01",
+      "matched_rows": [
+        {
+          "row_idx": 0,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_02",
+      "matched_rows": [
+        {
+          "row_idx": 1,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_03",
+      "matched_rows": [
+        {
+          "row_idx": 2,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_04",
+      "matched_rows": [
+        {
+          "row_idx": 3,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_05",
+      "matched_rows": [
+        {
+          "row_idx": 4,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_06",
+      "matched_rows": [
+        {
+          "row_idx": 5,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_07",
+      "matched_rows": [
+        {
+          "row_idx": 6,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_08",
+      "matched_rows": [
+        {
+          "row_idx": 7,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_09",
+      "matched_rows": [
+        {
+          "row_idx": 8,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_10",
+      "matched_rows": [
+        {
+          "row_idx": 9,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_11",
+      "matched_rows": [
+        {
+          "row_idx": 10,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_12",
+      "matched_rows": [
+        {
+          "row_idx": 11,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_13",
+      "matched_rows": [
+        {
+          "row_idx": 12,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_14",
+      "matched_rows": [
+        {
+          "row_idx": 13,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_15",
+      "matched_rows": [
+        {
+          "row_idx": 14,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_16",
+      "matched_rows": [
+        {
+          "row_idx": 15,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_17",
+      "matched_rows": [
+        {
+          "row_idx": 16,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_18",
+      "matched_rows": [
+        {
+          "row_idx": 17,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_19",
+      "matched_rows": [
+        {
+          "row_idx": 18,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_20",
+      "matched_rows": [
+        {
+          "row_idx": 19,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_21",
+      "matched_rows": [
+        {
+          "row_idx": 20,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_22",
+      "matched_rows": [
+        {
+          "row_idx": 21,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_23",
+      "matched_rows": [
+        {
+          "row_idx": 22,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_24",
+      "matched_rows": [
+        {
+          "row_idx": 23,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold",
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "exact_match": true,
+      "local_dataset_id": "mmlu-high-school-statistics",
+      "local_item_id": "stat_25",
+      "matched_rows": [
+        {
+          "row_idx": 24,
+          "upstream_item_id": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7175875",
+      "matched_rows": [
+        {
+          "row_idx": 0,
+          "upstream_item_id": "Mercury_7175875"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_SC_409171",
+      "matched_rows": [
+        {
+          "row_idx": 1,
+          "upstream_item_id": "Mercury_SC_409171"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_SC_408547",
+      "matched_rows": [
+        {
+          "row_idx": 2,
+          "upstream_item_id": "Mercury_SC_408547"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_407327",
+      "matched_rows": [
+        {
+          "row_idx": 3,
+          "upstream_item_id": "Mercury_407327"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "MCAS_2006_9_44",
+      "matched_rows": [
+        {
+          "row_idx": 4,
+          "upstream_item_id": "MCAS_2006_9_44"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7270393",
+      "matched_rows": [
+        {
+          "row_idx": 5,
+          "upstream_item_id": "Mercury_7270393"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "MCAS_2014_5_7",
+      "matched_rows": [
+        {
+          "row_idx": 6,
+          "upstream_item_id": "MCAS_2014_5_7"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7086660",
+      "matched_rows": [
+        {
+          "row_idx": 7,
+          "upstream_item_id": "Mercury_7086660"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7168805",
+      "matched_rows": [
+        {
+          "row_idx": 8,
+          "upstream_item_id": "Mercury_7168805"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "MCAS_2003_8_11",
+      "matched_rows": [
+        {
+          "row_idx": 9,
+          "upstream_item_id": "MCAS_2003_8_11"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7250058",
+      "matched_rows": [
+        {
+          "row_idx": 10,
+          "upstream_item_id": "Mercury_7250058"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7012740",
+      "matched_rows": [
+        {
+          "row_idx": 11,
+          "upstream_item_id": "Mercury_7012740"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_LBS10610",
+      "matched_rows": [
+        {
+          "row_idx": 12,
+          "upstream_item_id": "Mercury_LBS10610"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_SC_407400",
+      "matched_rows": [
+        {
+          "row_idx": 13,
+          "upstream_item_id": "Mercury_SC_407400"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7212993",
+      "matched_rows": [
+        {
+          "row_idx": 14,
+          "upstream_item_id": "Mercury_7212993"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_SC_413240",
+      "matched_rows": [
+        {
+          "row_idx": 15,
+          "upstream_item_id": "Mercury_SC_413240"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7186358",
+      "matched_rows": [
+        {
+          "row_idx": 16,
+          "upstream_item_id": "Mercury_7186358"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7166425",
+      "matched_rows": [
+        {
+          "row_idx": 17,
+          "upstream_item_id": "Mercury_7166425"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "MDSA_2007_8_3",
+      "matched_rows": [
+        {
+          "row_idx": 18,
+          "upstream_item_id": "MDSA_2007_8_3"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7094290",
+      "matched_rows": [
+        {
+          "row_idx": 19,
+          "upstream_item_id": "Mercury_7094290"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_7186568",
+      "matched_rows": [
+        {
+          "row_idx": 20,
+          "upstream_item_id": "Mercury_7186568"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_402216",
+      "matched_rows": [
+        {
+          "row_idx": 21,
+          "upstream_item_id": "Mercury_402216"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_404894",
+      "matched_rows": [
+        {
+          "row_idx": 22,
+          "upstream_item_id": "Mercury_404894"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "MCAS_2002_8_11",
+      "matched_rows": [
+        {
+          "row_idx": 23,
+          "upstream_item_id": "MCAS_2002_8_11"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "bundle": "arc-challenge",
+      "collection_revision": null,
+      "comparison": "question, ordered option labels and text, gold, upstream item ID",
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "exact_match": true,
+      "local_dataset_id": "arc-challenge",
+      "local_item_id": "Mercury_SC_405086",
+      "matched_rows": [
+        {
+          "row_idx": 24,
+          "upstream_item_id": "Mercury_SC_405086"
+        }
+      ],
+      "split": "test"
+    }
+  ],
+  "limitations": [
+    "Matches concern saved item content, not model-response authenticity.",
+    "Current upstream heads are recorded separately; original collection revisions remain unknown.",
+    "Dataset-server responses do not pin a repository revision; current heads are observations, not guaranteed snapshot revisions.",
+    "An unmatched tuple does not establish authorship or prove absence from other dataset versions or splits."
+  ],
+  "schema_version": 1,
+  "summary": [
+    {
+      "bundle": "external-eval",
+      "exact_matches": 0,
+      "items": 20
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "exact_matches": 0,
+      "items": 20
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "exact_matches": 25,
+      "items": 25
+    },
+    {
+      "bundle": "arc-challenge",
+      "exact_matches": 25,
+      "items": 25
+    }
+  ]
+}

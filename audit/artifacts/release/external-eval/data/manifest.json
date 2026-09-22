@@ -1,0 +1,50 @@
+{
+  "adapter_version": "1",
+  "annotations_file": null,
+  "annotations_sha256": null,
+  "artifacts": [
+    {
+      "artifact_id": "GENERIC",
+      "assigned_labels": {
+        "adapter": "generic",
+        "origin": "source_file"
+      },
+      "copied_relative_path": "raw/bundle.json",
+      "original_relative_path": "bundle.json",
+      "row_count": 40,
+      "sha256": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04"
+    }
+  ],
+  "comparisons": [
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "MMLU-CS-COMP",
+      "dataset_id": "mmlu-security",
+      "model_label": "meta-llama-3-8b-instruct",
+      "run_id": "MMLU_CS_RUN",
+      "target_condition": "cue"
+    },
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "MMLU-MATH-COMP",
+      "dataset_id": "mmlu-math",
+      "model_label": "meta-llama-3-8b-instruct",
+      "run_id": "MMLU_MATH_RUN",
+      "target_condition": "cue"
+    }
+  ],
+  "item_context_file": "item_context.jsonl",
+  "item_context_sha256": "1cbb96deb514830e2416675185ea66419c5cca089ee62b7431f753b0df1c8c21",
+  "normalized_file": "normalized.jsonl",
+  "normalized_sha256": "b68ae2ffd3d142a899d838b14e9b741f3deb03615a100b785c3290b7718cc3d7",
+  "profile": "generic-v1",
+  "provenance_notes": [
+    "Published benchmark artifact: MMLU (Hendrycks et al., 2020, arXiv:2009.03300).",
+    "License: MIT License. Real questions from computer_security and elementary_mathematics test sets.",
+    "Ingested via generic-v1 profile to evaluate claim-integrity gates on public benchmarks.",
+    "Includes balanced gold distributions, dual-basis answer parsing, and leave-one-item-out diagnostics."
+  ],
+  "schema_version": 1
+}

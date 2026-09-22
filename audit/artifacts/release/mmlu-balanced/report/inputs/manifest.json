@@ -1,0 +1,49 @@
+{
+  "adapter_version": "1",
+  "annotations_file": null,
+  "annotations_sha256": null,
+  "artifacts": [
+    {
+      "artifact_id": "GENERIC",
+      "assigned_labels": {
+        "adapter": "generic",
+        "origin": "source_file"
+      },
+      "copied_relative_path": "raw/bundle.json",
+      "original_relative_path": "bundle.json",
+      "row_count": 40,
+      "sha256": "d46477de1aad16e5731fa9b1644eed7a0902204ffc2242588d373fb4f7fc45b0"
+    }
+  ],
+  "comparisons": [
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "MMLU-CS-COMP",
+      "dataset_id": "mmlu-security",
+      "model_label": "meta-llama-3.1-8b-instruct",
+      "run_id": "MMLU_BALANCED_RUN",
+      "target_condition": "cue"
+    },
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "MMLU-MATH-COMP",
+      "dataset_id": "mmlu-math",
+      "model_label": "meta-llama-3.1-8b-instruct",
+      "run_id": "MMLU_BALANCED_RUN",
+      "target_condition": "cue"
+    }
+  ],
+  "item_context_file": "item_context.jsonl",
+  "item_context_sha256": "ca509fa78e78809242f07af77b06f508e2f63e87aef9d3ae8b4deef4aa37fb4a",
+  "normalized_file": "normalized.jsonl",
+  "normalized_sha256": "2c000e5db765b8648627098b058cf0e0a5736560b7708355ee7e8681d4a7dfc6",
+  "profile": "generic-v1",
+  "provenance_notes": [
+    "Real model inference: meta-llama/Llama-3.1-8B-Instruct on MMLU balanced items",
+    "Baseline: standard zero-shot prompt",
+    "Target: answer-key leak in system message (gold-oracle control)"
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "baseline",
+    "dataset_id": "mmlu-security",
+    "gold": "C",
+    "item_id": "cs01",
+    "model_label": "meta-llama-3.1-8b-instruct",
+    "response_completeness": "complete",
+    "response_text": "C",
+    "run_id": "MMLU_BALANCED_RUN",
+    "stored_answer": "C"
+  },
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "cue",
+    "dataset_id": "mmlu-security",
+    "gold": "C",
+    "item_id": "cs01",
+    "model_label": "meta-llama-3.1-8b-instruct",
+    "response_completeness": "complete",
+    "response_text": "C",
+    "run_id": "MMLU_BALANCED_RUN",
+    "stored_answer": "C"
+  }
+]

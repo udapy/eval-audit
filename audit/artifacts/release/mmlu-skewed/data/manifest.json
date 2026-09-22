@@ -1,0 +1,41 @@
+{
+  "adapter_version": "1",
+  "annotations_file": null,
+  "annotations_sha256": null,
+  "artifacts": [
+    {
+      "artifact_id": "GENERIC",
+      "assigned_labels": {
+        "adapter": "generic",
+        "origin": "source_file"
+      },
+      "copied_relative_path": "raw/bundle.json",
+      "original_relative_path": "bundle.json",
+      "row_count": 50,
+      "sha256": "421ac767911e467e6cca772af223f5a8304e12501bcf972ed29449eec8cc719a"
+    }
+  ],
+  "comparisons": [
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "MMLU-HIGH-COMP",
+      "dataset_id": "mmlu-high-school-statistics",
+      "model_label": "meta-llama-3.1-8b-instruct",
+      "run_id": "MMLU_HIGH_SCHOOL_STATISTICS_RUN",
+      "target_condition": "cue"
+    }
+  ],
+  "item_context_file": "item_context.jsonl",
+  "item_context_sha256": "98641797387f7145b0cf2a42e54d5912f3bccf7776d6ae3ae0e6f2793f5a18d4",
+  "normalized_file": "normalized.jsonl",
+  "normalized_sha256": "432ab73c79af2a6367bc07988af422a1c48ea8ade93411f13da6546a4eebef9d",
+  "profile": "generic-v1",
+  "provenance_notes": [
+    "Model: meta-llama/Llama-3.1-8B-Instruct via HF Inference API",
+    "Benchmark: MMLU (Hendrycks et al., 2020) subject high_school_statistics",
+    "Condition 'baseline': standard zero-shot MCQ prompt",
+    "Condition 'cue': prompt includes gold answer leak in system message (gold-oracle control)"
+  ],
+  "schema_version": 1
+}

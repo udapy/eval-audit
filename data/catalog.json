@@ -1,0 +1,319 @@
+{
+  "answer_basis": "stored",
+  "comparisons": [
+    {
+      "baseline_correct": 6,
+      "baseline_entropy_bits": 1.811278124459133,
+      "baseline_valid": 8,
+      "comparison_id": "XFER-BAL",
+      "dataset_id": "xfer-balanced",
+      "example": "transfer-fixture",
+      "gold_counts": {
+        "A": 2,
+        "B": 2,
+        "C": 2,
+        "D": 2
+      },
+      "model_label": "fixture-synthetic",
+      "n_pairs": 8,
+      "oracle_entropy_bits": 2.0,
+      "oracle_entropy_drop": -0.18872187554086706,
+      "oracle_flag": false,
+      "source_sha256": "792616e543c76cae2f67b8c5f6c4059d32c77092013b9ed27589edec0bcc06c4",
+      "target_correct": 8,
+      "target_entropy_bits": 2.0,
+      "target_valid": 8
+    },
+    {
+      "baseline_correct": 4,
+      "baseline_entropy_bits": 2.0,
+      "baseline_valid": 8,
+      "comparison_id": "XFER-SKEW",
+      "dataset_id": "xfer-mild-skew",
+      "example": "transfer-fixture",
+      "gold_counts": {
+        "A": 3,
+        "B": 3,
+        "C": 1,
+        "D": 1
+      },
+      "model_label": "fixture-synthetic",
+      "n_pairs": 8,
+      "oracle_entropy_bits": 1.811278124459133,
+      "oracle_entropy_drop": 0.18872187554086706,
+      "oracle_flag": true,
+      "source_sha256": "792616e543c76cae2f67b8c5f6c4059d32c77092013b9ed27589edec0bcc06c4",
+      "target_correct": 7,
+      "target_entropy_bits": 1.75,
+      "target_valid": 8
+    },
+    {
+      "baseline_correct": 9,
+      "baseline_entropy_bits": 1.8464393446710154,
+      "baseline_valid": 10,
+      "comparison_id": "MMLU-CS-COMP",
+      "dataset_id": "mmlu-security",
+      "example": "external-eval",
+      "gold_counts": {
+        "A": 3,
+        "B": 3,
+        "C": 2,
+        "D": 2
+      },
+      "model_label": "meta-llama-3-8b-instruct",
+      "n_pairs": 10,
+      "oracle_entropy_bits": 1.9709505944546686,
+      "oracle_entropy_drop": -0.12451124978365313,
+      "oracle_flag": false,
+      "source_sha256": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04",
+      "target_correct": 10,
+      "target_entropy_bits": 1.9709505944546686,
+      "target_valid": 10
+    },
+    {
+      "baseline_correct": 7,
+      "baseline_entropy_bits": 1.4854752972273344,
+      "baseline_valid": 10,
+      "comparison_id": "MMLU-MATH-COMP",
+      "dataset_id": "mmlu-math",
+      "example": "external-eval",
+      "gold_counts": {
+        "A": 2,
+        "B": 3,
+        "C": 3,
+        "D": 2
+      },
+      "model_label": "meta-llama-3-8b-instruct",
+      "n_pairs": 10,
+      "oracle_entropy_bits": 1.9709505944546686,
+      "oracle_entropy_drop": -0.4854752972273342,
+      "oracle_flag": false,
+      "source_sha256": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04",
+      "target_correct": 9,
+      "target_entropy_bits": 1.9219280948873623,
+      "target_valid": 10
+    },
+    {
+      "baseline_correct": 10,
+      "baseline_entropy_bits": 1.9709505944546686,
+      "baseline_valid": 10,
+      "comparison_id": "MMLU-CS-COMP",
+      "dataset_id": "mmlu-security",
+      "example": "mmlu-balanced",
+      "gold_counts": {
+        "A": 3,
+        "B": 3,
+        "C": 2,
+        "D": 2
+      },
+      "model_label": "meta-llama-3.1-8b-instruct",
+      "n_pairs": 10,
+      "oracle_entropy_bits": 1.9709505944546686,
+      "oracle_entropy_drop": 0.0,
+      "oracle_flag": false,
+      "source_sha256": "d46477de1aad16e5731fa9b1644eed7a0902204ffc2242588d373fb4f7fc45b0",
+      "target_correct": 10,
+      "target_entropy_bits": 1.9709505944546686,
+      "target_valid": 10
+    },
+    {
+      "baseline_correct": 7,
+      "baseline_entropy_bits": 1.6854752972273344,
+      "baseline_valid": 10,
+      "comparison_id": "MMLU-MATH-COMP",
+      "dataset_id": "mmlu-math",
+      "example": "mmlu-balanced",
+      "gold_counts": {
+        "A": 2,
+        "B": 3,
+        "C": 3,
+        "D": 2
+      },
+      "model_label": "meta-llama-3.1-8b-instruct",
+      "n_pairs": 10,
+      "oracle_entropy_bits": 1.9709505944546686,
+      "oracle_entropy_drop": -0.2854752972273342,
+      "oracle_flag": false,
+      "source_sha256": "d46477de1aad16e5731fa9b1644eed7a0902204ffc2242588d373fb4f7fc45b0",
+      "target_correct": 10,
+      "target_entropy_bits": 1.9709505944546686,
+      "target_valid": 10
+    },
+    {
+      "baseline_correct": 10,
+      "baseline_entropy_bits": 1.9322381921018905,
+      "baseline_valid": 25,
+      "comparison_id": "MMLU-HIGH-COMP",
+      "dataset_id": "mmlu-high-school-statistics",
+      "example": "mmlu-skewed",
+      "gold_counts": {
+        "A": 2,
+        "B": 3,
+        "C": 5,
+        "D": 15
+      },
+      "model_label": "meta-llama-3.1-8b-instruct",
+      "n_pairs": 25,
+      "oracle_entropy_bits": 1.5651407133456023,
+      "oracle_entropy_drop": 0.3670974787562882,
+      "oracle_flag": true,
+      "source_sha256": "421ac767911e467e6cca772af223f5a8304e12501bcf972ed29449eec8cc719a",
+      "target_correct": 25,
+      "target_entropy_bits": 1.5651407133456023,
+      "target_valid": 25
+    },
+    {
+      "baseline_correct": 17,
+      "baseline_entropy_bits": 1.8474201200521745,
+      "baseline_valid": 19,
+      "comparison_id": "ARC-CHALLENGE-COMP",
+      "dataset_id": "arc-challenge",
+      "example": "arc-challenge",
+      "gold_counts": {
+        "A": 5,
+        "B": 8,
+        "C": 10,
+        "D": 2
+      },
+      "model_label": "qwen-3-8b",
+      "n_pairs": 25,
+      "oracle_entropy_bits": 1.810699332842307,
+      "oracle_entropy_drop": 0.03672078720986738,
+      "oracle_flag": false,
+      "source_sha256": "633f7d95782157bd09ee72a66f9c842673088cc248f38b66c5b0da6107c8c887",
+      "target_correct": 22,
+      "target_entropy_bits": 1.6879410452364207,
+      "target_valid": 23
+    }
+  ],
+  "examples": [
+    {
+      "bytes": 18431,
+      "dataset_provenance": "original authored fixture",
+      "dataset_revision": null,
+      "id": "transfer-fixture",
+      "license_status": "original fixture declares CC0-1.0",
+      "missing_evidence": [],
+      "model_revision": null,
+      "n_items": 16,
+      "n_rows": 32,
+      "recorded_model_labels": [
+        "fixture-synthetic"
+      ],
+      "report": "audit/artifacts/release/transfer-fixture/report/report.md",
+      "requested_model_from_script": null,
+      "response_evidence": "assigned synthetic responses",
+      "sha256": "792616e543c76cae2f67b8c5f6c4059d32c77092013b9ed27589edec0bcc06c4",
+      "source": "examples/transfer-fixture/bundle.json",
+      "title": "Synthetic paired fixture",
+      "upstream_verification": null
+    },
+    {
+      "bytes": 26681,
+      "dataset_provenance": "manually embedded questions; upstream item matching unverified",
+      "dataset_revision": null,
+      "id": "external-eval",
+      "license_status": "see THIRD_PARTY.md; upstream licensing does not establish local provenance",
+      "missing_evidence": [
+        "upstream question origin",
+        "collection revision"
+      ],
+      "model_revision": null,
+      "n_items": 20,
+      "n_rows": 40,
+      "recorded_model_labels": [
+        "meta-llama-3-8b-instruct"
+      ],
+      "report": "audit/artifacts/release/external-eval/report/report.md",
+      "requested_model_from_script": null,
+      "response_evidence": "assigned synthetic responses; recorded model label is not execution evidence",
+      "sha256": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04",
+      "source": "examples/external-eval/bundle.json",
+      "title": "Security/math authored fixture",
+      "upstream_verification": "data/provenance/upstream-20260922/item_matches.json"
+    },
+    {
+      "bytes": 24698,
+      "dataset_provenance": "manually embedded questions; upstream item matching unverified",
+      "dataset_revision": null,
+      "id": "mmlu-balanced",
+      "license_status": "see THIRD_PARTY.md; upstream licensing does not establish local provenance",
+      "missing_evidence": [
+        "upstream question origin",
+        "collection revision",
+        "full provider responses",
+        "request IDs",
+        "returned model snapshot",
+        "finish reasons"
+      ],
+      "model_revision": null,
+      "n_items": 20,
+      "n_rows": 40,
+      "recorded_model_labels": [
+        "meta-llama-3.1-8b-instruct"
+      ],
+      "report": "audit/artifacts/release/mmlu-balanced/report/report.md",
+      "requested_model_from_script": "meta-llama/Llama-3.1-8B-Instruct",
+      "response_evidence": "saved text; collection claimed, provider execution unverified",
+      "sha256": "d46477de1aad16e5731fa9b1644eed7a0902204ffc2242588d373fb4f7fc45b0",
+      "source": "examples/mmlu-balanced/bundle.json",
+      "title": "Security/math saved responses",
+      "upstream_verification": "data/provenance/upstream-20260922/item_matches.json"
+    },
+    {
+      "bytes": 40206,
+      "dataset_provenance": "all bundled items match captured current upstream rows; collection revision remains unknown",
+      "dataset_revision": null,
+      "id": "mmlu-skewed",
+      "license_status": "see THIRD_PARTY.md; upstream licensing does not establish local provenance",
+      "missing_evidence": [
+        "collection revision",
+        "full provider responses",
+        "request IDs",
+        "returned model snapshot",
+        "finish reasons"
+      ],
+      "model_revision": null,
+      "n_items": 25,
+      "n_rows": 50,
+      "recorded_model_labels": [
+        "meta-llama-3.1-8b-instruct"
+      ],
+      "report": "audit/artifacts/release/mmlu-skewed/report/report.md",
+      "requested_model_from_script": "meta-llama/Llama-3.1-8B-Instruct",
+      "response_evidence": "saved text; collection claimed, provider execution unverified",
+      "sha256": "421ac767911e467e6cca772af223f5a8304e12501bcf972ed29449eec8cc719a",
+      "source": "examples/mmlu-skewed/bundle.json",
+      "title": "Statistics saved responses",
+      "upstream_verification": "data/provenance/upstream-20260922/item_matches.json"
+    },
+    {
+      "bytes": 34889,
+      "dataset_provenance": "all bundled items match captured current upstream rows; collection revision remains unknown",
+      "dataset_revision": null,
+      "id": "arc-challenge",
+      "license_status": "see THIRD_PARTY.md; upstream licensing does not establish local provenance",
+      "missing_evidence": [
+        "collection revision",
+        "full provider responses",
+        "request IDs",
+        "returned model snapshot",
+        "finish reasons"
+      ],
+      "model_revision": null,
+      "n_items": 25,
+      "n_rows": 50,
+      "recorded_model_labels": [
+        "qwen-3-8b"
+      ],
+      "report": "audit/artifacts/release/arc-challenge/report/report.md",
+      "requested_model_from_script": "Qwen/Qwen3-8B",
+      "response_evidence": "saved text; collection claimed, provider execution unverified",
+      "sha256": "633f7d95782157bd09ee72a66f9c842673088cc248f38b66c5b0da6107c8c887",
+      "source": "examples/arc-challenge/bundle.json",
+      "title": "Science saved responses",
+      "upstream_verification": "data/provenance/upstream-20260922/item_matches.json"
+    }
+  ],
+  "schema_version": 1
+}

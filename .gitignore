@@ -217,7 +217,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Local research notes, evidence, and generated outputs. Not part of this repository.
+# Scratch caches, pre-edit archives, and package build outputs.
 /local/
 /.tmp/
 /.archive/

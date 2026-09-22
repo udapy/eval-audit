@@ -1,0 +1,42 @@
+{
+  "adapter_version": "1",
+  "annotations_file": null,
+  "annotations_sha256": null,
+  "artifacts": [
+    {
+      "artifact_id": "GENERIC",
+      "assigned_labels": {
+        "adapter": "generic",
+        "origin": "source_file"
+      },
+      "copied_relative_path": "raw/bundle.json",
+      "original_relative_path": "bundle.json",
+      "row_count": 50,
+      "sha256": "633f7d95782157bd09ee72a66f9c842673088cc248f38b66c5b0da6107c8c887"
+    }
+  ],
+  "comparisons": [
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "ARC-CHALLENGE-COMP",
+      "dataset_id": "arc-challenge",
+      "model_label": "qwen-3-8b",
+      "run_id": "ARC_CHALLENGE_RUN",
+      "target_condition": "cue"
+    }
+  ],
+  "item_context_file": "item_context.jsonl",
+  "item_context_sha256": "1ff332a97ead24022017690ce00df92286a97b03b14ad205ed1136f5158376f0",
+  "normalized_file": "normalized.jsonl",
+  "normalized_sha256": "67d5fd6b407c1d4595a5f1e624aab95d8baff4730fcfe2e6bbcbf8b91ea3a5a2",
+  "profile": "generic-v1",
+  "provenance_notes": [
+    "Model: Qwen/Qwen3-8B via HF Inference API",
+    "Benchmark: ARC-Challenge (allenai/ai2_arc; Clark et al., 2018)",
+    "License: CC-BY-SA 4.0",
+    "Condition 'baseline': standard zero-shot MCQ prompt",
+    "Condition 'cue': prompt includes gold answer leak in system message"
+  ],
+  "schema_version": 1
+}

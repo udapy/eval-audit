@@ -1,0 +1,36 @@
+{
+  "algorithm": "sha256",
+  "excludes": [
+    "checksums.json"
+  ],
+  "files": {
+    "item_matches.json": "5d7e808b466deb849f0fa80a7102e54c5c398dd2ec2846fd869a616a7411e950",
+    "local_inputs/arc-challenge.json": "633f7d95782157bd09ee72a66f9c842673088cc248f38b66c5b0da6107c8c887",
+    "local_inputs/external-eval.json": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04",
+    "local_inputs/mmlu-balanced.json": "d46477de1aad16e5731fa9b1644eed7a0902204ffc2242588d373fb4f7fc45b0",
+    "local_inputs/mmlu-skewed.json": "421ac767911e467e6cca772af223f5a8304e12501bcf972ed29449eec8cc719a",
+    "requests.json": "df886b58d24fffd8b1e3e16c45a1fdaac9b8a192a1f8ebe9d8d9300d03a396d7",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0000.json": "18c49fd189c54486efafc617bcff900a8157c213a0cc5c25cda45a21e1a12e48",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0100.json": "9f81df69b6f08775f5be0a72405d2b900daea6419a7a1d6ecc66c68cde0b76f7",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0200.json": "e8ec8243f420bbe072500df4adae7e44ed6649c38f57ae8672b20c4efbb88d59",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0300.json": "76de95dc4c918dcabb10c5c6b2c35494a696c214aa0e410f76636dac78238f84",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0400.json": "c8776285702958c70fe25b19ec608d377614f3788c5c4f9187bb598506e5329f",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0500.json": "8afbb11bd2eef4b2b43e452a446eca8914435593a9c35d6ab0424b3a3d99ae6d",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0600.json": "8e6228768dcdb9fa897b38a6ba0516e12bdd37bd22494a3ab5ac581da2505ce5",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0700.json": "8ca76a9a8a9817a2a6940762862fbaacb56db41837df2910a646b49ada9e6981",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0800.json": "5bba1cea5e0eaf35a1ae7f140bdd928de4c2acc76671df056a6f4f3c1d36363c",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0900.json": "5429e98a75acaaa84f4fee544ecdafa8f2b4b92ac03bc3b5499fc7456c246674",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-1000.json": "5bd346237965a55e4047be433b0ffd6089da054a5a894a032fc8a584ee82b71d",
+    "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-1100.json": "eba3cfd879e54c6c339d47619b7016c52849bc555e77eb87c995d31eb79edb57",
+    "upstream/allenai--ai2_arc--metadata.json": "d773b7f6ccb902a5cdbd864afe9ccd268aa47ef3ce7de1f4fd96b51696a0ac02",
+    "upstream/cais--mmlu--computer_security--test--offset-0000.json": "fc1c3ddf4989ee4420901d8599eb2de4a054da53609e49d1428e7901a902d1dc",
+    "upstream/cais--mmlu--elementary_mathematics--test--offset-0000.json": "718a746463a8df0fc8a449f40a4286a3577165cf48147241a81d00d397d7ceac",
+    "upstream/cais--mmlu--elementary_mathematics--test--offset-0100.json": "db95654f54fb4a745f2b6ad15f6f095e00b30d6bd633fa52444a1d5ef339644e",
+    "upstream/cais--mmlu--elementary_mathematics--test--offset-0200.json": "497bf2773c3e1b122ee54f154370d9ff76beac5c11414ece74865b4ace6b59aa",
+    "upstream/cais--mmlu--elementary_mathematics--test--offset-0300.json": "7738cb69c6dc0d8070d9fc06eae940007a666350f9e79d6e2ab42654034f4bef",
+    "upstream/cais--mmlu--high_school_statistics--test--offset-0000.json": "3c78718bf1b88a017b9a523329e7875d21c82600e74b0b6c48251f9255110202",
+    "upstream/cais--mmlu--high_school_statistics--test--offset-0100.json": "cb3a6c7e275f9d03c476a53fce75c92b5d0ed465f73fab4186b5a231fdb6dc67",
+    "upstream/cais--mmlu--high_school_statistics--test--offset-0200.json": "f0489a796fbfc2fd4d9c09d05eac4fe2de9b2f0a6458e271e5f4a44a5fb49fb8",
+    "upstream/cais--mmlu--metadata.json": "7d1f6e96c792be61cd13669fef81fe8c7035c534bead5f9867f6d7e36f75e15b"
+  }
+}

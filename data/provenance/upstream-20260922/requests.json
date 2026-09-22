@@ -1,0 +1,397 @@
+{
+  "completed_at_utc": "2026-09-22T04:54:49.798608+00:00",
+  "current_heads": [
+    {
+      "collection_revision": null,
+      "current_head_observed": "c30699e8356da336a370243923dbaf21066bb9fe",
+      "dataset": "cais/mmlu",
+      "dataset_card_url": "https://huggingface.co/datasets/cais/mmlu",
+      "metadata_snapshot": "upstream/cais--mmlu--metadata.json",
+      "upstream_license_recorded": [
+        "mit"
+      ]
+    },
+    {
+      "collection_revision": null,
+      "current_head_observed": "210d026faf9955653af8916fad021475a3f00453",
+      "dataset": "allenai/ai2_arc",
+      "dataset_card_url": "https://huggingface.co/datasets/allenai/ai2_arc",
+      "metadata_snapshot": "upstream/allenai--ai2_arc--metadata.json",
+      "upstream_license_recorded": [
+        "cc-by-sa-4.0"
+      ]
+    }
+  ],
+  "local_inputs": [
+    {
+      "bundle": "external-eval",
+      "sha256": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04",
+      "snapshot": "local_inputs/external-eval.json",
+      "source": "examples/external-eval/bundle.json"
+    },
+    {
+      "bundle": "mmlu-balanced",
+      "sha256": "d46477de1aad16e5731fa9b1644eed7a0902204ffc2242588d373fb4f7fc45b0",
+      "snapshot": "local_inputs/mmlu-balanced.json",
+      "source": "examples/mmlu-balanced/bundle.json"
+    },
+    {
+      "bundle": "mmlu-skewed",
+      "sha256": "421ac767911e467e6cca772af223f5a8304e12501bcf972ed29449eec8cc719a",
+      "snapshot": "local_inputs/mmlu-skewed.json",
+      "source": "examples/mmlu-skewed/bundle.json"
+    },
+    {
+      "bundle": "arc-challenge",
+      "sha256": "633f7d95782157bd09ee72a66f9c842673088cc248f38b66c5b0da6107c8c887",
+      "snapshot": "local_inputs/arc-challenge.json",
+      "source": "examples/arc-challenge/bundle.json"
+    }
+  ],
+  "requests": [
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:38.057420+00:00",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 22 Sep 2026 04:54:37 GMT",
+        "ETag": "W/\"da3c-/BuNpTaV7wT+z6eJKTmHB0Zlqw0\""
+      },
+      "method": "GET",
+      "sha256": "7d1f6e96c792be61cd13669fef81fe8c7035c534bead5f9867f6d7e36f75e15b",
+      "snapshot": "upstream/cais--mmlu--metadata.json",
+      "status": 200,
+      "url": "https://huggingface.co/api/datasets/cais/mmlu"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:38.356483+00:00",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 22 Sep 2026 04:54:38 GMT",
+        "ETag": "W/\"db2-B8Cjf265kXlfwGat5MK6fUHfZRI\""
+      },
+      "method": "GET",
+      "sha256": "d773b7f6ccb902a5cdbd864afe9ccd268aa47ef3ce7de1f4fd96b51696a0ac02",
+      "snapshot": "upstream/allenai--ai2_arc--metadata.json",
+      "status": 200,
+      "url": "https://huggingface.co/api/datasets/allenai/ai2_arc"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:38.866420+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:38 GMT"
+      },
+      "method": "GET",
+      "sha256": "fc1c3ddf4989ee4420901d8599eb2de4a054da53609e49d1428e7901a902d1dc",
+      "snapshot": "upstream/cais--mmlu--computer_security--test--offset-0000.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=computer_security&split=test&offset=0&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:39.699670+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:39 GMT"
+      },
+      "method": "GET",
+      "sha256": "718a746463a8df0fc8a449f40a4286a3577165cf48147241a81d00d397d7ceac",
+      "snapshot": "upstream/cais--mmlu--elementary_mathematics--test--offset-0000.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=elementary_mathematics&split=test&offset=0&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:40.226932+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:40 GMT"
+      },
+      "method": "GET",
+      "sha256": "db95654f54fb4a745f2b6ad15f6f095e00b30d6bd633fa52444a1d5ef339644e",
+      "snapshot": "upstream/cais--mmlu--elementary_mathematics--test--offset-0100.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=elementary_mathematics&split=test&offset=100&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:40.650829+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:40 GMT"
+      },
+      "method": "GET",
+      "sha256": "497bf2773c3e1b122ee54f154370d9ff76beac5c11414ece74865b4ace6b59aa",
+      "snapshot": "upstream/cais--mmlu--elementary_mathematics--test--offset-0200.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=elementary_mathematics&split=test&offset=200&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:41.269756+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:41 GMT"
+      },
+      "method": "GET",
+      "sha256": "7738cb69c6dc0d8070d9fc06eae940007a666350f9e79d6e2ab42654034f4bef",
+      "snapshot": "upstream/cais--mmlu--elementary_mathematics--test--offset-0300.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=elementary_mathematics&split=test&offset=300&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:41.755660+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:41 GMT"
+      },
+      "method": "GET",
+      "sha256": "3c78718bf1b88a017b9a523329e7875d21c82600e74b0b6c48251f9255110202",
+      "snapshot": "upstream/cais--mmlu--high_school_statistics--test--offset-0000.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=high_school_statistics&split=test&offset=0&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:42.247214+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:42 GMT"
+      },
+      "method": "GET",
+      "sha256": "cb3a6c7e275f9d03c476a53fce75c92b5d0ed465f73fab4186b5a231fdb6dc67",
+      "snapshot": "upstream/cais--mmlu--high_school_statistics--test--offset-0100.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=high_school_statistics&split=test&offset=100&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:42.707032+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:42 GMT"
+      },
+      "method": "GET",
+      "sha256": "f0489a796fbfc2fd4d9c09d05eac4fe2de9b2f0a6458e271e5f4a44a5fb49fb8",
+      "snapshot": "upstream/cais--mmlu--high_school_statistics--test--offset-0200.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=cais%2Fmmlu&config=high_school_statistics&split=test&offset=200&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:43.181490+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:43 GMT"
+      },
+      "method": "GET",
+      "sha256": "18c49fd189c54486efafc617bcff900a8157c213a0cc5c25cda45a21e1a12e48",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0000.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=0&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:43.700750+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:43 GMT"
+      },
+      "method": "GET",
+      "sha256": "9f81df69b6f08775f5be0a72405d2b900daea6419a7a1d6ecc66c68cde0b76f7",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0100.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=100&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:45.675327+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:45 GMT"
+      },
+      "method": "GET",
+      "sha256": "e8ec8243f420bbe072500df4adae7e44ed6649c38f57ae8672b20c4efbb88d59",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0200.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=200&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:46.169305+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:46 GMT"
+      },
+      "method": "GET",
+      "sha256": "76de95dc4c918dcabb10c5c6b2c35494a696c214aa0e410f76636dac78238f84",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0300.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=300&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:46.620658+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:46 GMT"
+      },
+      "method": "GET",
+      "sha256": "c8776285702958c70fe25b19ec608d377614f3788c5c4f9187bb598506e5329f",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0400.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=400&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:47.083620+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:46 GMT"
+      },
+      "method": "GET",
+      "sha256": "8afbb11bd2eef4b2b43e452a446eca8914435593a9c35d6ab0424b3a3d99ae6d",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0500.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=500&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:47.550087+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:47 GMT"
+      },
+      "method": "GET",
+      "sha256": "8e6228768dcdb9fa897b38a6ba0516e12bdd37bd22494a3ab5ac581da2505ce5",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0600.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=600&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:48.025405+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:47 GMT"
+      },
+      "method": "GET",
+      "sha256": "8ca76a9a8a9817a2a6940762862fbaacb56db41837df2910a646b49ada9e6981",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0700.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=700&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:48.447706+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:48 GMT"
+      },
+      "method": "GET",
+      "sha256": "5bba1cea5e0eaf35a1ae7f140bdd928de4c2acc76671df056a6f4f3c1d36363c",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0800.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=800&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:48.906055+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:48 GMT"
+      },
+      "method": "GET",
+      "sha256": "5429e98a75acaaa84f4fee544ecdafa8f2b4b92ac03bc3b5499fc7456c246674",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0900.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=900&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:49.366285+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:49 GMT"
+      },
+      "method": "GET",
+      "sha256": "5bd346237965a55e4047be433b0ffd6089da054a5a894a032fc8a584ee82b71d",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-1000.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=1000&length=100"
+    },
+    {
+      "authenticated": false,
+      "fetched_at_utc": "2026-09-22T04:54:49.798418+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2026 04:54:49 GMT"
+      },
+      "method": "GET",
+      "sha256": "eba3cfd879e54c6c339d47619b7016c52849bc555e77eb87c995d31eb79edb57",
+      "snapshot": "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-1100.json",
+      "status": 200,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=allenai%2Fai2_arc&config=ARC-Challenge&split=test&offset=1100&length=100"
+    }
+  ],
+  "schema_version": 1,
+  "splits": [
+    {
+      "config": "computer_security",
+      "dataset": "cais/mmlu",
+      "num_rows_total": 100,
+      "snapshots": [
+        "upstream/cais--mmlu--computer_security--test--offset-0000.json"
+      ],
+      "split": "test"
+    },
+    {
+      "config": "elementary_mathematics",
+      "dataset": "cais/mmlu",
+      "num_rows_total": 378,
+      "snapshots": [
+        "upstream/cais--mmlu--elementary_mathematics--test--offset-0000.json",
+        "upstream/cais--mmlu--elementary_mathematics--test--offset-0100.json",
+        "upstream/cais--mmlu--elementary_mathematics--test--offset-0200.json",
+        "upstream/cais--mmlu--elementary_mathematics--test--offset-0300.json"
+      ],
+      "split": "test"
+    },
+    {
+      "config": "high_school_statistics",
+      "dataset": "cais/mmlu",
+      "num_rows_total": 216,
+      "snapshots": [
+        "upstream/cais--mmlu--high_school_statistics--test--offset-0000.json",
+        "upstream/cais--mmlu--high_school_statistics--test--offset-0100.json",
+        "upstream/cais--mmlu--high_school_statistics--test--offset-0200.json"
+      ],
+      "split": "test"
+    },
+    {
+      "config": "ARC-Challenge",
+      "dataset": "allenai/ai2_arc",
+      "num_rows_total": 1172,
+      "snapshots": [
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0000.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0100.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0200.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0300.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0400.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0500.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0600.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0700.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0800.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-0900.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-1000.json",
+        "upstream/allenai--ai2_arc--ARC-Challenge--test--offset-1100.json"
+      ],
+      "split": "test"
+    }
+  ],
+  "started_at_utc": "2026-09-22T04:54:37.673617+00:00"
+}

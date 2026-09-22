@@ -1,0 +1,25 @@
+{
+  "step": "B",
+  "status": "complete",
+  "service_tests": 22,
+  "public_tests_passed": 131,
+  "full_check_before_final_three_tests": {
+    "passed": 155,
+    "skipped": 13,
+    "research_bundles_replayed": 5,
+    "source_receipts_verified": 28
+  },
+  "benchmark": {
+    "records": 2000,
+    "seconds": 0.9026654590015823,
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "workload": "synthetic balanced MCQ performance check; no model execution",
+    "artifact": ".tmp/service-benchmark-20260922T134510304248Z",
+    "audit_id": "8996f8695e8649f6b078628e691be650"
+  },
+  "original_backup_files_verified": 143,
+  "unchanged_source_bundles": 5,
+  "design_refinement": "New service and CLI log routes require explicit paired envelopes; strict gold-independent parser produces labeled derivatives. Legacy direct adapters retained for compatibility, excluded from new integrations.",
+  "review": "Local code review and adversarial tests; independent review unavailable after earlier agent usage limit.",
+  "no_model_execution": true
+}

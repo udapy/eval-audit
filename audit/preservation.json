@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "original_files_verified": 428,
+  "original_bytes_verified": 2491433,
+  "relocations_accounted_for": 14,
+  "unchanged_source_bundles": [
+    "examples/external-eval/bundle.json",
+    "examples/mmlu-balanced/bundle.json",
+    "examples/mmlu-skewed/bundle.json",
+    "examples/arc-challenge/bundle.json"
+  ],
+  "metadata_only_derivative": {
+    "source": "examples/transfer-fixture/bundle.json",
+    "original_sha256": "31711f58f6c879132514d10a85ca42f8e697371d9a9e2a42f401d9f2262aa47d",
+    "release_sha256": "792616e543c76cae2f67b8c5f6c4059d32c77092013b9ed27589edec0bcc06c4",
+    "unchanged": "all fields except provenance_notes"
+  },
+  "archive_included_in_release": false
+}

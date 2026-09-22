@@ -1,0 +1,51 @@
+{
+  "status": "optional source contract, not a new result",
+  "models_are_folder_labels_not_verified_snapshots": true,
+  "sources": [
+    {
+      "artifact_id": "L",
+      "expected_source_relative_path": "lib/evals_common.py",
+      "expected_sha256": "8e8ca76d09c1c9db0a5be27493af661b386a7949d44e6df82e2d8fdf828e6fe3",
+      "expected_rows": 0,
+      "recorded_model_label": null,
+      "dataset_id": null,
+      "availability": "not bundled; explicit separately supplied source required"
+    },
+    {
+      "artifact_id": "M1",
+      "expected_source_relative_path": "results/gpt4.1-mini-model-results/wave1_h1/wave1_MVE.json",
+      "expected_sha256": "db7ca948ff5b4a58d2c036b9fc2adcbd6965a6055c1b07c86694dfd517f2ae0b",
+      "expected_rows": 20,
+      "recorded_model_label": "gpt-4.1-mini",
+      "dataset_id": "historical-h1",
+      "availability": "not bundled; explicit separately supplied source required"
+    },
+    {
+      "artifact_id": "F1",
+      "expected_source_relative_path": "results/gpt4.1-full-model-results/gpt4.1_wave1_H1_10_notebook_results/Wave1 MVE.json",
+      "expected_sha256": "80ea61312709bfb6b4252ba7a11e61361d888ae1bec0835499ac61790a3595f9",
+      "expected_rows": 20,
+      "recorded_model_label": "gpt-4.1",
+      "dataset_id": "historical-h1",
+      "availability": "not bundled; explicit separately supplied source required"
+    },
+    {
+      "artifact_id": "M2",
+      "expected_source_relative_path": "results/gpt4.1-mini-model-results/wave2_h2_strong/wave2_strong_MVE.json",
+      "expected_sha256": "1dc3ff13686baee71b99898855abc13be514e4673f2314866a49ee22d70f46f2",
+      "expected_rows": 24,
+      "recorded_model_label": "gpt-4.1-mini",
+      "dataset_id": "historical-h2",
+      "availability": "not bundled; explicit separately supplied source required"
+    },
+    {
+      "artifact_id": "F2",
+      "expected_source_relative_path": "results/gpt4.1-full-model-results/gpt4.1_wave2_H2_strong_11_notebook_results/wave2_strong_MVE.json",
+      "expected_sha256": "ce754fe955f0fab34de9506d9951202f8d44beb2d7fdb56ec6ea0cbfdb775eca",
+      "expected_rows": 24,
+      "recorded_model_label": "gpt-4.1",
+      "dataset_id": "historical-h2",
+      "availability": "not bundled; explicit separately supplied source required"
+    }
+  ]
+}

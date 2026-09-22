@@ -1,0 +1,51 @@
+{
+  "adapter_version": "1",
+  "annotations_file": null,
+  "annotations_sha256": null,
+  "artifacts": [
+    {
+      "artifact_id": "GENERIC",
+      "assigned_labels": {
+        "adapter": "generic",
+        "origin": "source_file"
+      },
+      "copied_relative_path": "raw/bundle.json",
+      "original_relative_path": "bundle.json",
+      "row_count": 32,
+      "sha256": "792616e543c76cae2f67b8c5f6c4059d32c77092013b9ed27589edec0bcc06c4"
+    }
+  ],
+  "comparisons": [
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "XFER-BAL",
+      "dataset_id": "xfer-balanced",
+      "model_label": "fixture-synthetic",
+      "run_id": "X1",
+      "target_condition": "cue"
+    },
+    {
+      "bank_mapping": null,
+      "baseline_condition": "baseline",
+      "comparison_id": "XFER-SKEW",
+      "dataset_id": "xfer-mild-skew",
+      "model_label": "fixture-synthetic",
+      "run_id": "X2",
+      "target_condition": "cue"
+    }
+  ],
+  "item_context_file": "item_context.jsonl",
+  "item_context_sha256": "8066c41df14324947f82da5333fe083d3a4056b9da6acc1a8cf95e27a175d049",
+  "normalized_file": "normalized.jsonl",
+  "normalized_sha256": "8324cc866bd6b15b7659b202e6d693d718dd96ee97a3807e36e7bb420ae35b96",
+  "profile": "generic-v1",
+  "provenance_notes": [
+    "Original synthetic paired fixture for testing generic import and measurement diagnostics.",
+    "License: CC0 1.0. Authored 2026-09-18. Stored letters are assigned, not model outputs.",
+    "This fixture is not a published benchmark or an independent model evaluation.",
+    "xfer-balanced golds are 2 each of A/B/C/D. xfer-mild-skew golds are 3A+3B+1C+1D.",
+    "Paired changes are multi-item by construction. Gold keys are not rewritten at import."
+  ],
+  "schema_version": 1
+}

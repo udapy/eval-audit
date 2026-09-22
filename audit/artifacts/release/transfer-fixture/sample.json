@@ -1,0 +1,36 @@
+[
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "baseline",
+    "dataset_id": "xfer-balanced",
+    "gold": "A",
+    "item_id": "xb01",
+    "model_label": "fixture-synthetic",
+    "response_completeness": "complete",
+    "response_text": "ANSWER: A",
+    "run_id": "X1",
+    "stored_answer": "A"
+  },
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "cue",
+    "dataset_id": "xfer-balanced",
+    "gold": "A",
+    "item_id": "xb01",
+    "model_label": "fixture-synthetic",
+    "response_completeness": "complete",
+    "response_text": "ANSWER: A",
+    "run_id": "X1",
+    "stored_answer": "A"
+  }
+]

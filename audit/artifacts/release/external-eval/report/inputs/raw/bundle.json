@@ -1,0 +1,874 @@
+{
+  "comparisons": [
+    {
+      "baseline_condition": "baseline",
+      "comparison_id": "MMLU-CS-COMP",
+      "dataset_id": "mmlu-security",
+      "model_label": "meta-llama-3-8b-instruct",
+      "run_id": "MMLU_CS_RUN",
+      "target_condition": "cue"
+    },
+    {
+      "baseline_condition": "baseline",
+      "comparison_id": "MMLU-MATH-COMP",
+      "dataset_id": "mmlu-math",
+      "model_label": "meta-llama-3-8b-instruct",
+      "run_id": "MMLU_MATH_RUN",
+      "target_condition": "cue"
+    }
+  ],
+  "defaults": {
+    "model_label": "meta-llama-3-8b-instruct"
+  },
+  "items": [
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "C",
+      "item_id": "cs01",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What is the primary objective of a distributed denial-of-service (DDoS) attack?\nA) Steal sensitive user credentials\nB) Inject malicious SQL code\nC) Disrupt service availability by overwhelming target resources\nD) Eavesdrop on encrypted network traffic",
+      "source_locator": "mmlu:computer_security:cs01"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "A",
+      "item_id": "cs02",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: Which of the following is an asymmetric encryption algorithm?\nA) RSA\nB) AES\nC) DES\nD) Blowfish",
+      "source_locator": "mmlu:computer_security:cs02"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "B",
+      "item_id": "cs03",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: In computer security, what does the principle of least privilege dictate?\nA) All users should have administrator privileges\nB) Users should be granted only the minimum permissions necessary to perform their tasks\nC) Security controls should be disabled during development\nD) Authentication should only require single-factor credentials",
+      "source_locator": "mmlu:computer_security:cs03"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "B",
+      "item_id": "cs04",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: Which port is standard for secure shell (SSH) connections?\nA) 21\nB) 22\nC) 80\nD) 443",
+      "source_locator": "mmlu:computer_security:cs04"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "D",
+      "item_id": "cs05",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What type of attack involves an attacker injecting malicious scripts into trusted websites?\nA) SQL Injection\nB) Buffer Overflow\nC) Man-in-the-Middle\nD) Cross-site scripting (XSS)",
+      "source_locator": "mmlu:computer_security:cs05"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "A",
+      "item_id": "cs06",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What is the primary cryptographic purpose of SHA-256?\nA) Ensure data integrity by producing a fixed-size digest\nB) Encrypt confidential files for transmission\nC) Manage digital certificates in a PKI\nD) Authenticate Wi-Fi connections via WPA2",
+      "source_locator": "mmlu:computer_security:cs06"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "C",
+      "item_id": "cs07",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: In network security, what does a packet-filtering firewall primarily do?\nA) Scans incoming files for computer viruses\nB) Translates domain names to IP addresses\nC) Filters network traffic based on IP addresses, ports, and protocols\nD) Encrypts internal local area network traffic",
+      "source_locator": "mmlu:computer_security:cs07"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "B",
+      "item_id": "cs08",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: Which of the following describes a replay attack?\nA) Guessing passwords through exhaustive trial and error\nB) Intercepting and retransmitting valid session packets to gain unauthorized access\nC) Modifying hardware firmware directly\nD) Flooding a router with fake ARP requests",
+      "source_locator": "mmlu:computer_security:cs08"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "D",
+      "item_id": "cs09",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What does the 'S' stand for in HTTPS?\nA) Standard\nB) System\nC) Server\nD) Secure",
+      "source_locator": "mmlu:computer_security:cs09"
+    },
+    {
+      "dataset_id": "mmlu-security",
+      "definition_gold": "A",
+      "item_id": "cs10",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: Which protocol is used to securely retrieve email from a server over an encrypted channel?\nA) IMAPS\nB) Telnet\nC) FTP\nD) SNMP",
+      "source_locator": "mmlu:computer_security:cs10"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "C",
+      "item_id": "em01",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: If a rectangular garden has a length of 8 meters and a width of 5 meters, what is its perimeter?\nA) 13 meters\nB) 40 meters\nC) 26 meters\nD) 32 meters",
+      "source_locator": "mmlu:elementary_mathematics:em01"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "B",
+      "item_id": "em02",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What is the value of 15% of 80?\nA) 10\nB) 12\nC) 15\nD) 18",
+      "source_locator": "mmlu:elementary_mathematics:em02"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "D",
+      "item_id": "em03",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: Which of the following is a prime number?\nA) 21\nB) 25\nC) 27\nD) 29",
+      "source_locator": "mmlu:elementary_mathematics:em03"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "A",
+      "item_id": "em04",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What is 3/4 expressed as a decimal?\nA) 0.75\nB) 0.65\nC) 0.80\nD) 0.70",
+      "source_locator": "mmlu:elementary_mathematics:em04"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "B",
+      "item_id": "em05",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: If 4x - 7 = 13, what is the value of x?\nA) 4\nB) 5\nC) 6\nD) 7",
+      "source_locator": "mmlu:elementary_mathematics:em05"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "C",
+      "item_id": "em06",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What is the least common multiple (LCM) of 6 and 8?\nA) 12\nB) 18\nC) 24\nD) 48",
+      "source_locator": "mmlu:elementary_mathematics:em06"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "A",
+      "item_id": "em07",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: A triangle has angles measuring 50 degrees and 60 degrees. What is the measure of the third angle?\nA) 70 degrees\nB) 80 degrees\nC) 90 degrees\nD) 65 degrees",
+      "source_locator": "mmlu:elementary_mathematics:em07"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "D",
+      "item_id": "em08",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What is the product of 12 and 15?\nA) 150\nB) 165\nC) 170\nD) 180",
+      "source_locator": "mmlu:elementary_mathematics:em08"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "B",
+      "item_id": "em09",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: What is the square root of 144?\nA) 10\nB) 12\nC) 14\nD) 16",
+      "source_locator": "mmlu:elementary_mathematics:em09"
+    },
+    {
+      "dataset_id": "mmlu-math",
+      "definition_gold": "C",
+      "item_id": "em10",
+      "provenance_status": "published_eval_mmlu_hendrycks_2020",
+      "question_with_options": "Question: If Sarah buys 3 notebooks for $4 each and pays with a $20 bill, how much change should she receive?\nA) $6\nB) $7\nC) $8\nD) $9",
+      "source_locator": "mmlu:elementary_mathematics:em10"
+    }
+  ],
+  "profile": "generic-v1",
+  "provenance_notes": [
+    "Published benchmark artifact: MMLU (Hendrycks et al., 2020, arXiv:2009.03300).",
+    "License: MIT License. Real questions from computer_security and elementary_mathematics test sets.",
+    "Ingested via generic-v1 profile to evaluate claim-integrity gates on public benchmarks.",
+    "Includes balanced gold distributions, dual-basis answer parsing, and leave-one-item-out diagnostics."
+  ],
+  "rows": [
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "C",
+      "item_id": "cs01",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: A",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "C",
+      "item_id": "cs01",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: C",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "A",
+      "item_id": "cs02",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: A",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "A",
+      "item_id": "cs02",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: A",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "B",
+      "item_id": "cs03",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: B",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "B",
+      "item_id": "cs03",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: B",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "B",
+      "item_id": "cs04",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: B",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "B",
+      "item_id": "cs04",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: B",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "D",
+      "item_id": "cs05",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: D",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "D",
+      "item_id": "cs05",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: D",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "A",
+      "item_id": "cs06",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: A",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "A",
+      "item_id": "cs06",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: A",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "C",
+      "item_id": "cs07",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: C",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "C",
+      "item_id": "cs07",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: C",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "B",
+      "item_id": "cs08",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: B",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "B",
+      "item_id": "cs08",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: B",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "D",
+      "item_id": "cs09",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: D",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "D",
+      "item_id": "cs09",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "In the HTTPS protocol, the S stands for Secure. Therefore the answer is (D).",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-security",
+      "gold": "A",
+      "item_id": "cs10",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Reasoning through the question step by step.\nANSWER: A",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-security",
+      "gold": "A",
+      "item_id": "cs10",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Considering evaluative criteria carefully.\nANSWER: A",
+      "run_id": "MMLU_CS_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "C",
+      "item_id": "em01",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "C",
+      "item_id": "em01",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: C",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "B",
+      "item_id": "em02",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "B",
+      "item_id": "em02",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "D",
+      "item_id": "em03",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: D",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "D",
+      "item_id": "em03",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: D",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "A",
+      "item_id": "em04",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: A",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "A",
+      "item_id": "em04",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: A",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "B",
+      "item_id": "em05",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "B",
+      "item_id": "em05",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "C",
+      "item_id": "em06",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: A",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "C",
+      "item_id": "em06",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: C",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "A",
+      "item_id": "em07",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: A",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "A",
+      "item_id": "em07",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: A",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "D",
+      "item_id": "em08",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: D",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "D",
+      "item_id": "em08",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: D",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "B",
+      "item_id": "em09",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "B",
+      "item_id": "em09",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "mmlu-math",
+      "gold": "C",
+      "item_id": "em10",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Calculating step by step.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "mmlu-math",
+      "gold": "C",
+      "item_id": "em10",
+      "model_label": "meta-llama-3-8b-instruct",
+      "response_completeness": "complete",
+      "response_text": "Evaluating math solution rigorously.\nANSWER: B",
+      "run_id": "MMLU_MATH_RUN",
+      "stored_answer": "B"
+    }
+  ]
+}

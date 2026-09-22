@@ -1,0 +1,25 @@
+[
+  {
+    "baseline_correct": 17,
+    "baseline_entropy_bits": 1.8474201200521745,
+    "baseline_valid": 19,
+    "comparison_id": "ARC-CHALLENGE-COMP",
+    "dataset_id": "arc-challenge",
+    "example": "arc-challenge",
+    "gold_counts": {
+      "A": 5,
+      "B": 8,
+      "C": 10,
+      "D": 2
+    },
+    "model_label": "qwen-3-8b",
+    "n_pairs": 25,
+    "oracle_entropy_bits": 1.810699332842307,
+    "oracle_entropy_drop": 0.03672078720986738,
+    "oracle_flag": false,
+    "source_sha256": "633f7d95782157bd09ee72a66f9c842673088cc248f38b66c5b0da6107c8c887",
+    "target_correct": 22,
+    "target_entropy_bits": 1.6879410452364207,
+    "target_valid": 23
+  }
+]

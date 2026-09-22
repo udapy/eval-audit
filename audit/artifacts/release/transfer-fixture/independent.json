@@ -1,0 +1,48 @@
+[
+  {
+    "baseline_correct": 6,
+    "baseline_entropy_bits": 1.811278124459133,
+    "baseline_valid": 8,
+    "comparison_id": "XFER-BAL",
+    "dataset_id": "xfer-balanced",
+    "example": "transfer-fixture",
+    "gold_counts": {
+      "A": 2,
+      "B": 2,
+      "C": 2,
+      "D": 2
+    },
+    "model_label": "fixture-synthetic",
+    "n_pairs": 8,
+    "oracle_entropy_bits": 2.0,
+    "oracle_entropy_drop": -0.18872187554086706,
+    "oracle_flag": false,
+    "source_sha256": "792616e543c76cae2f67b8c5f6c4059d32c77092013b9ed27589edec0bcc06c4",
+    "target_correct": 8,
+    "target_entropy_bits": 2.0,
+    "target_valid": 8
+  },
+  {
+    "baseline_correct": 4,
+    "baseline_entropy_bits": 2.0,
+    "baseline_valid": 8,
+    "comparison_id": "XFER-SKEW",
+    "dataset_id": "xfer-mild-skew",
+    "example": "transfer-fixture",
+    "gold_counts": {
+      "A": 3,
+      "B": 3,
+      "C": 1,
+      "D": 1
+    },
+    "model_label": "fixture-synthetic",
+    "n_pairs": 8,
+    "oracle_entropy_bits": 1.811278124459133,
+    "oracle_entropy_drop": 0.18872187554086706,
+    "oracle_flag": true,
+    "source_sha256": "792616e543c76cae2f67b8c5f6c4059d32c77092013b9ed27589edec0bcc06c4",
+    "target_correct": 7,
+    "target_entropy_bits": 1.75,
+    "target_valid": 8
+  }
+]

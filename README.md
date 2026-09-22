@@ -1,45 +1,69 @@
 # Eval Audit
 
-Deterministic, offline diagnostics for saved multiple-choice evaluation results. Python 3.12+; no runtime dependencies, credentials, model downloads, or GPU required.
+Offline diagnostics for saved multiple-choice evaluation results. Import saved answer records, compare stored labels with parsed text, compute simple controls and item influence, and produce inspectable reports. Python 3.12+; no runtime dependencies, credentials, or model downloads.
 
-## Install and run
+**Start here:** [research note](docs/RESEARCH-NOTE.md) · [data and models](data/README.md) · [input format](docs/INPUT-FORMAT.md) · [terminology](docs/GLOSSARY.md) · [release verification](docs/VERIFICATION.md).
 
-```sh
-python -m pip install eval-audit
-python -m eval_audit demo --out my-new-demo
-```
+![Offline audit workflow](docs/figures/workflow.png)
 
-The demo uses constructed arithmetic questions and assigned answers. Open `my-new-demo/report.md` to inspect metrics, controls, and linked evidence. Choose a fresh output directory for every run; existing evidence is not overwritten.
+## Install and try it
 
-For your own saved bundle:
+From this project's directory:
 
 ```sh
-eval-audit import --source bundle.json --out imported-inputs
-eval-audit audit --manifest imported-inputs/manifest.json --out audit-report
-eval-audit check bundle.json
+python3 -m venv .venv
+.venv/bin/python -m pip install -e '.[dev,plots]'
+.venv/bin/eval-audit demo --out .tmp/my-first-demo
+.venv/bin/eval-audit import --source examples/transfer-fixture/bundle.json --out .tmp/my-first-input
+.venv/bin/eval-audit audit --manifest .tmp/my-first-input/manifest.json --out .tmp/my-first-report
 ```
 
-A generic JSON bundle contains `rows` and explicit paired `comparisons`, with optional item text and provenance notes. Rows identify dataset, model label, run, item, condition, gold key, stored answer, response text, and allowed answer labels. Missing answers stay missing. The source distribution includes an original CC0 synthetic bundle under `examples/transfer-fixture/`.
+Use a new output directory for each run. The CLI refuses nonempty destinations. Open the generated `report.md`; its evidence pages link records to saved source bytes. Source bundles and code licenses are described separately in [THIRD_PARTY.md](THIRD_PARTY.md).
 
-## Read diagnostics carefully
+## Commands
 
-G0 checks source/manifest integrity; G1 checks saved-answer parsing and available option identities; G2 tests a computed gold oracle against a historical entropy heuristic; G3 diagnoses single-item accuracy influence. G4 always records that behavioral claims require additional evidence and human interpretation.
+| Command | Purpose |
+| --- | --- |
+| `eval-audit demo --out DIR` | Generate and audit a small synthetic example |
+| `eval-audit import --source BUNDLE --out DIR` | Import a generic JSON or JSONL bundle |
+| `eval-audit audit --manifest FILE --out DIR` | Generate metrics, findings, gate results, and evidence pages |
+| `eval-audit triage --manifest FILE --out FILE` | Export a queue for human review |
+| `eval-audit check BUNDLE` | Print scoped engineering diagnostics |
+| `eval-audit check LOG --format inspect` | Import supported Inspect log fields and audit them |
+| `eval-audit check LOG --format lm-eval` | Import supported lm-evaluation-harness sample fields |
+| `eval-audit import-historical --source DIR --out DIR` | Optional importer for an explicitly supplied, byte-pinned historical collection |
 
-`check` exits 0 when no G0/G2 finding blocks the check, 2 for blocking/invalid inputs, and 1 for unexpected errors. Advisory diagnostics may remain at exit 0. A completed audit does not establish deception, evaluation awareness, or the validity of a behavioral claim.
+`check` exits 0 when G0/G2 have no blocking finding, 2 for blocked/invalid input, and 1 for an unexpected audit error. G1/G3 diagnostics remain advisory and G4 remains unestablished. Exit 0 is **not validation of a behavioral claim**. `audit` reports input-processing status; review its findings even when it exits 0. See [gate definitions](docs/GLOSSARY.md).
 
-Accuracy includes missing rows in its all-row denominator; entropy uses valid letters only. Stored labels, parsed answers, and gold keys remain separate. Source hashes detect changed bytes but do not authenticate a recorded model label.
+Adapters support particular saved-field layouts; they are not claims of compatibility with every upstream log version. The provider client and collection scripts are optional, separate from offline replay.
 
-## Other interfaces
-
-The CLI also exports human review queues with `triage`, accepts supported saved Inspect and lm-evaluation-harness layouts through `check --format`, and provides `import-historical` for an explicitly supplied optional pinned collection. Log adapter support is limited to tested layouts, not every upstream log version.
-
-## Local assistant
+## Reproduce this release
 
 ```sh
-python -m pip install 'eval-audit[mcp]'
-eval-audit-mcp --workspace /absolute/workspace --output-root audit-output
+make check
+make evidence
+make figures
+make release-audit
+make release
 ```
 
-That command starts a local stdio server for the same audit service as the CLI. The core install omits this extra. Setup, the tool contract, and a synthetic example are in [docs/MCP.md](docs/MCP.md). Text returned to the assistant can leave the machine when the assistant host is a cloud service.
+`make check` uses bundled offline inputs and keeps its outputs in a fresh `.tmp/` directory. Evidence and figure regeneration archives existing outputs before replacement. `make release` creates a timestamped public package. Examples, evidence, and the research note are in this repository. A wheel installs the library and CLI.
 
-The code is MIT licensed. The original synthetic transfer fixture declares CC0-1.0. Model weights, saved research responses, upstream benchmark snapshots, and historical annotations are excluded from public distributions. No claim is made about third-party redistribution rights for user-supplied data.
+Historical source data is not bundled and is not needed for normal use. To run optional historical integration tests, set `EVAL_AUDIT_HISTORICAL_SOURCE` to a separately supplied authorized collection. Model collection is outside this workflow; see [collection notes](scripts/collection/README.md).
+
+## What the evidence supports
+
+The [catalog](data/catalog.json) indexes five bundles and distinguishes assigned responses from saved text with locally recorded model attribution. The named balanced subset has unverified benchmark origin. Statistics and science items have separate upstream verification receipts; model execution is not independently authenticated by those receipts.
+
+A computed gold oracle is a perfect answerer by construction. A model prompted with the answer key can still emit a wrong or missing answer. The oracle diagnostic depends on both gold keys and the saved baseline. It cannot establish deception, sandbagging, or evaluation awareness.
+
+## Project map
+
+- `src/`: library and CLI; `tests/`: offline regression cases.
+- `examples/`: frozen source bundles and example-specific notes.
+- `data/`: evidence catalog, comparison tables, upstream verification receipts.
+- `audit/`: regenerated reports, independent arithmetic, and release records.
+- `docs/`: research note, format reference, glossary, and static figures. Install notes are in `docs/PACKAGE-README.md`. Local assistant setup is in `docs/MCP.md`.
+- `scripts/`: reproduction, source verification, packaging, and optional collection.
+
+Original preparation material and pre-edit files are preserved in an excluded local archive. No archived preparation files are required to use the release.

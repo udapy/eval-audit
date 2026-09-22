@@ -1,0 +1,707 @@
+{
+  "comparisons": [
+    {
+      "baseline_condition": "baseline",
+      "comparison_id": "XFER-BAL",
+      "dataset_id": "xfer-balanced",
+      "model_label": "fixture-synthetic",
+      "run_id": "X1",
+      "target_condition": "cue"
+    },
+    {
+      "baseline_condition": "baseline",
+      "comparison_id": "XFER-SKEW",
+      "dataset_id": "xfer-mild-skew",
+      "model_label": "fixture-synthetic",
+      "run_id": "X2",
+      "target_condition": "cue"
+    }
+  ],
+  "defaults": {
+    "model_label": "fixture-synthetic"
+  },
+  "items": [
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "A",
+      "item_id": "xb01",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 7 + 5?\nA) 12\nB) 11\nC) 13\nD) 10",
+      "source_locator": "transfer-fixture:xfer-balanced:xb01"
+    },
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "B",
+      "item_id": "xb02",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 9 minus 4?\nA) 6\nB) 5\nC) 4\nD) 3",
+      "source_locator": "transfer-fixture:xfer-balanced:xb02"
+    },
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "C",
+      "item_id": "xb03",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 3 times 4?\nA) 7\nB) 8\nC) 12\nD) 16",
+      "source_locator": "transfer-fixture:xfer-balanced:xb03"
+    },
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "D",
+      "item_id": "xb04",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 16 divided by 4?\nA) 2\nB) 8\nC) 6\nD) 4",
+      "source_locator": "transfer-fixture:xfer-balanced:xb04"
+    },
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "A",
+      "item_id": "xb05",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: How many minutes are in one hour?\nA) 60\nB) 24\nC) 30\nD) 100",
+      "source_locator": "transfer-fixture:xfer-balanced:xb05"
+    },
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "B",
+      "item_id": "xb06",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: How many sides does a hexagon have?\nA) 5\nB) 6\nC) 8\nD) 7",
+      "source_locator": "transfer-fixture:xfer-balanced:xb06"
+    },
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "C",
+      "item_id": "xb07",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What integer comes immediately after 10?\nA) 9\nB) 10\nC) 11\nD) 12",
+      "source_locator": "transfer-fixture:xfer-balanced:xb07"
+    },
+    {
+      "dataset_id": "xfer-balanced",
+      "definition_gold": "D",
+      "item_id": "xb08",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: How many quarters make one whole?\nA) 2\nB) 3\nC) 5\nD) 4",
+      "source_locator": "transfer-fixture:xfer-balanced:xb08"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "A",
+      "item_id": "xs01",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 10 + 1?\nA) 11\nB) 9\nC) 12\nD) 10",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs01"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "A",
+      "item_id": "xs02",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 8 + 2?\nA) 10\nB) 6\nC) 16\nD) 4",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs02"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "A",
+      "item_id": "xs03",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 1 + 1?\nA) 2\nB) 0\nC) 1\nD) 3",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs03"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "B",
+      "item_id": "xs04",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 5 minus 2?\nA) 4\nB) 3\nC) 2\nD) 1",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs04"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "B",
+      "item_id": "xs05",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 6 minus 1?\nA) 4\nB) 5\nC) 7\nD) 6",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs05"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "B",
+      "item_id": "xs06",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 4 minus 1?\nA) 2\nB) 3\nC) 5\nD) 1",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs06"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "C",
+      "item_id": "xs07",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 2 times 5?\nA) 7\nB) 8\nC) 10\nD) 12",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs07"
+    },
+    {
+      "dataset_id": "xfer-mild-skew",
+      "definition_gold": "D",
+      "item_id": "xs08",
+      "provenance_status": "original_fixture_not_a_published_eval",
+      "question_with_options": "Q: What is 9 divided by 3?\nA) 2\nB) 6\nC) 9\nD) 3",
+      "source_locator": "transfer-fixture:xfer-mild-skew:xs08"
+    }
+  ],
+  "profile": "generic-v1",
+  "provenance_notes": [
+    "Original synthetic paired fixture for testing generic import and measurement diagnostics.",
+    "License: CC0 1.0. Authored 2026-09-18. Stored letters are assigned, not model outputs.",
+    "This fixture is not a published benchmark or an independent model evaluation.",
+    "xfer-balanced golds are 2 each of A/B/C/D. xfer-mild-skew golds are 3A+3B+1C+1D.",
+    "Paired changes are multi-item by construction. Gold keys are not rewritten at import."
+  ],
+  "rows": [
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "A",
+      "item_id": "xb01",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X1",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "A",
+      "item_id": "xb01",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X1",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "B",
+      "item_id": "xb02",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: B",
+      "run_id": "X1",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "B",
+      "item_id": "xb02",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: B",
+      "run_id": "X1",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "C",
+      "item_id": "xb03",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X1",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "C",
+      "item_id": "xb03",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: C",
+      "run_id": "X1",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "D",
+      "item_id": "xb04",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D",
+      "run_id": "X1",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "D",
+      "item_id": "xb04",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D",
+      "run_id": "X1",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "A",
+      "item_id": "xb05",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X1",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "A",
+      "item_id": "xb05",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X1",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "B",
+      "item_id": "xb06",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D",
+      "run_id": "X1",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "B",
+      "item_id": "xb06",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: B",
+      "run_id": "X1",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "C",
+      "item_id": "xb07",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: C",
+      "run_id": "X1",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "C",
+      "item_id": "xb07",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "possibly_truncated",
+      "response_text": "I think the next integer after ten is eleven.",
+      "run_id": "X1",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-balanced",
+      "gold": "D",
+      "item_id": "xb08",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D",
+      "run_id": "X1",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-balanced",
+      "gold": "D",
+      "item_id": "xb08",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D I guess",
+      "run_id": "X1",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "A",
+      "item_id": "xs01",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X2",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "A",
+      "item_id": "xs01",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X2",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "A",
+      "item_id": "xs02",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: B",
+      "run_id": "X2",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "A",
+      "item_id": "xs02",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X2",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "A",
+      "item_id": "xs03",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: C",
+      "run_id": "X2",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "A",
+      "item_id": "xs03",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X2",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "B",
+      "item_id": "xs04",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D",
+      "run_id": "X2",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "B",
+      "item_id": "xs04",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: B",
+      "run_id": "X2",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "B",
+      "item_id": "xs05",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X2",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "B",
+      "item_id": "xs05",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: A",
+      "run_id": "X2",
+      "stored_answer": "A"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "B",
+      "item_id": "xs06",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: B",
+      "run_id": "X2",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "B",
+      "item_id": "xs06",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: B",
+      "run_id": "X2",
+      "stored_answer": "B"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "C",
+      "item_id": "xs07",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: C",
+      "run_id": "X2",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "C",
+      "item_id": "xs07",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: C",
+      "run_id": "X2",
+      "stored_answer": "C"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "baseline",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "D",
+      "item_id": "xs08",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D",
+      "run_id": "X2",
+      "stored_answer": "D"
+    },
+    {
+      "allowed_answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "condition": "cue",
+      "dataset_id": "xfer-mild-skew",
+      "gold": "D",
+      "item_id": "xs08",
+      "model_label": "fixture-synthetic",
+      "response_completeness": "complete",
+      "response_text": "ANSWER: D",
+      "run_id": "X2",
+      "stored_answer": "D"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "work_package": "A",
+  "status": "complete",
+  "backup_files_verified": 143,
+  "raw_bundles_unchanged": 5,
+  "public_tests": 109,
+  "build_from_extracted_source": "passed",
+  "installed_wheel_demo": "passed",
+  "public_release": "release/20260922T133335798810Z",
+  "publication": "not performed"
+}

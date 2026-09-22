@@ -1,0 +1,25 @@
+[
+  {
+    "baseline_correct": 10,
+    "baseline_entropy_bits": 1.9322381921018905,
+    "baseline_valid": 25,
+    "comparison_id": "MMLU-HIGH-COMP",
+    "dataset_id": "mmlu-high-school-statistics",
+    "example": "mmlu-skewed",
+    "gold_counts": {
+      "A": 2,
+      "B": 3,
+      "C": 5,
+      "D": 15
+    },
+    "model_label": "meta-llama-3.1-8b-instruct",
+    "n_pairs": 25,
+    "oracle_entropy_bits": 1.5651407133456023,
+    "oracle_entropy_drop": 0.3670974787562882,
+    "oracle_flag": true,
+    "source_sha256": "421ac767911e467e6cca772af223f5a8304e12501bcf972ed29449eec8cc719a",
+    "target_correct": 25,
+    "target_entropy_bits": 1.5651407133456023,
+    "target_valid": 25
+  }
+]

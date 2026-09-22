@@ -1,0 +1,36 @@
+[
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "baseline",
+    "dataset_id": "mmlu-high-school-statistics",
+    "gold": "B",
+    "item_id": "stat_01",
+    "model_label": "meta-llama-3.1-8b-instruct",
+    "response_completeness": "complete",
+    "response_text": "D)",
+    "run_id": "MMLU_HIGH_SCHOOL_STATISTICS_RUN",
+    "stored_answer": "D"
+  },
+  {
+    "allowed_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "condition": "cue",
+    "dataset_id": "mmlu-high-school-statistics",
+    "gold": "B",
+    "item_id": "stat_01",
+    "model_label": "meta-llama-3.1-8b-instruct",
+    "response_completeness": "complete",
+    "response_text": "B)",
+    "run_id": "MMLU_HIGH_SCHOOL_STATISTICS_RUN",
+    "stored_answer": "B"
+  }
+]

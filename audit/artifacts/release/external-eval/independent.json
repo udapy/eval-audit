@@ -1,0 +1,48 @@
+[
+  {
+    "baseline_correct": 9,
+    "baseline_entropy_bits": 1.8464393446710154,
+    "baseline_valid": 10,
+    "comparison_id": "MMLU-CS-COMP",
+    "dataset_id": "mmlu-security",
+    "example": "external-eval",
+    "gold_counts": {
+      "A": 3,
+      "B": 3,
+      "C": 2,
+      "D": 2
+    },
+    "model_label": "meta-llama-3-8b-instruct",
+    "n_pairs": 10,
+    "oracle_entropy_bits": 1.9709505944546686,
+    "oracle_entropy_drop": -0.12451124978365313,
+    "oracle_flag": false,
+    "source_sha256": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04",
+    "target_correct": 10,
+    "target_entropy_bits": 1.9709505944546686,
+    "target_valid": 10
+  },
+  {
+    "baseline_correct": 7,
+    "baseline_entropy_bits": 1.4854752972273344,
+    "baseline_valid": 10,
+    "comparison_id": "MMLU-MATH-COMP",
+    "dataset_id": "mmlu-math",
+    "example": "external-eval",
+    "gold_counts": {
+      "A": 2,
+      "B": 3,
+      "C": 3,
+      "D": 2
+    },
+    "model_label": "meta-llama-3-8b-instruct",
+    "n_pairs": 10,
+    "oracle_entropy_bits": 1.9709505944546686,
+    "oracle_entropy_drop": -0.4854752972273342,
+    "oracle_flag": false,
+    "source_sha256": "b4be00159e0a0d28fb7b76b81ddd99622e4c166f3b74005c3aea2e357ff38a04",
+    "target_correct": 9,
+    "target_entropy_bits": 1.9219280948873623,
+    "target_valid": 10
+  }
+]
