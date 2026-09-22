@@ -1,0 +1,36 @@
+# Public software only. Research packaging is an explicit separate profile.
+global-exclude *
+include LICENSE
+include pyproject.toml
+include MANIFEST.in
+include docs/PACKAGE-README.md
+include docs/PUBLIC-RELEASE.md
+include scripts/release_support.py
+include scripts/package_release.py
+include scripts/test_public.py
+include tests/__init__.py
+include tests/helpers.py
+include examples/transfer-fixture/bundle.json
+include tests/test_checks.py
+include tests/test_conformance.py
+include tests/test_gates.py
+include tests/test_generic_import.py
+include tests/test_ingestion_integrity.py
+include tests/test_metrics.py
+include tests/test_offline.py
+include tests/test_parsing.py
+include tests/test_regression_fixtures.py
+include tests/test_report.py
+include tests/test_report_integrity.py
+include tests/test_reusable_tooling.py
+include tests/test_schema.py
+include tests/test_public_distribution.py
+recursive-include src/eval_audit *.py *.typed
+global-exclude __pycache__ *.py[cod] .DS_Store
+
+include tests/test_service.py
+include docs/SERVICE.md
+include tests/test_mcp_server.py
+include docs/MCP.md
+include docs/mcp-reproducibility.json
+include examples/mcp/README.md

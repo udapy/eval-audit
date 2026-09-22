@@ -40,6 +40,6 @@ python -m pip install 'eval-audit[mcp]'
 eval-audit-mcp --workspace /absolute/workspace --output-root audit-output
 ```
 
-That command starts a local stdio server for the same audit service as the CLI. The core install omits this extra. Setup, the tool contract, and a synthetic example are in [docs/MCP.md](docs/MCP.md). Text returned to the assistant can leave the machine when the assistant host is a cloud service.
+That command starts a local stdio server for the same audit service as the CLI. The core install omits this extra. Setup, the tool contract, and a synthetic example are in [MCP.md](MCP.md). Text returned to the assistant can leave the machine when the assistant host is a cloud service.
 
 The code is MIT licensed. The original synthetic transfer fixture declares CC0-1.0. Model weights, saved research responses, upstream benchmark snapshots, and historical annotations are excluded from public distributions. No claim is made about third-party redistribution rights for user-supplied data.
