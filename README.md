@@ -8,7 +8,39 @@ Offline diagnostics for saved multiple-choice evaluation results. Import saved a
 
 ## Review the saved evidence
 
-The saved inputs, reports, independent arithmetic, and upstream item checks are in this repository. [Evidence for review](docs/EVIDENCE.md) maps each slice to its raw bundle and report. The [research note](docs/RESEARCH-NOTE.md) records the checked counts. Provider envelopes were not retained, so a model label in a report is a source claim. A completed audit does not establish deception, evaluation awareness, or model intent.
+The saved inputs, reports, independent arithmetic, and upstream item checks are in this repository. [Evidence for review](docs/EVIDENCE.md) maps each slice to its files. Provider envelopes were not retained, so a model label in a report is a source claim. A completed audit does not establish deception, evaluation awareness, or model intent.
+
+## Example runs
+
+Five bundles, eight paired comparisons. Auditing them replays saved rows. It does not call a model. Each pair compares a `baseline` condition with a `cue` condition. In the saved collection notes, the cue prompt includes the gold answer. The comparison table calls that side the target.
+
+![Answer-key counts in the saved slices](docs/figures/gold-distributions.png)
+
+![Stored-answer entropy against a computed gold oracle](docs/figures/entropy-comparison.png)
+
+The gold-oracle bar is a control: it answers every item with the stored gold key. It is not a model run. Entropy uses valid letters only. Accuracy includes missing answers in the denominator. The oracle drop below is baseline entropy minus gold-key entropy, shown to 6 decimal places. The flag uses the historical rule that a drop above 0.15 bits is marked. Unrounded values and source hashes are in [data/comparisons.csv](data/comparisons.csv).
+
+| Run | Items | Responses | Recorded label | Baseline correct | Cue correct | Valid baseline / cue | Oracle drop (bits) | Flag | Report |
+| --- | ---: | --- | --- | ---: | ---: | ---: | ---: | --- | --- |
+| [XFER-BAL](examples/transfer-fixture/bundle.json) | 8 | Assigned synthetic answers. Gold keys A2 B2 C2 D2 | fixture-synthetic | 6/8 | 8/8 | 8/8 | -0.188722 | false | [report](audit/artifacts/release/transfer-fixture/report/report.md) |
+| [XFER-SKEW](examples/transfer-fixture/bundle.json) | 8 | Assigned synthetic answers. Gold keys A3 B3 C1 D1 | fixture-synthetic | 4/8 | 7/8 | 8/8 | 0.188722 | true | [report](audit/artifacts/release/transfer-fixture/report/report.md) |
+| [Security, authored](examples/external-eval/bundle.json) | 10 | Assigned synthetic answers on local security questions | meta-llama-3-8b-instruct | 9/10 | 10/10 | 10/10 | -0.124511 | false | [report](audit/artifacts/release/external-eval/report/report.md) |
+| [Math, authored](examples/external-eval/bundle.json) | 10 | Assigned synthetic answers on local math questions | meta-llama-3-8b-instruct | 7/10 | 9/10 | 10/10 | -0.485475 | false | [report](audit/artifacts/release/external-eval/report/report.md) |
+| [Security, saved text](examples/mmlu-balanced/bundle.json) | 10 | Saved response text on the same local security questions | meta-llama-3.1-8b-instruct | 10/10 | 10/10 | 10/10 | 0.000000 | false | [report](audit/artifacts/release/mmlu-balanced/report/report.md) |
+| [Math, saved text](examples/mmlu-balanced/bundle.json) | 10 | Saved response text on the same local math questions | meta-llama-3.1-8b-instruct | 7/10 | 10/10 | 10/10 | -0.285475 | false | [report](audit/artifacts/release/mmlu-balanced/report/report.md) |
+| [Statistics](examples/mmlu-skewed/bundle.json) | 25 | Saved response text. First 25 high-school statistics items. Gold keys A2 B3 C5 D15 | meta-llama-3.1-8b-instruct | 10/25 | 25/25 | 25/25 | 0.367097 | true | [report](audit/artifacts/release/mmlu-skewed/report/report.md) |
+| [ARC science](examples/arc-challenge/bundle.json) | 25 | Saved response text, including missing answers. Gold keys A5 B8 C10 D2 | qwen-3-8b | 17/25 | 22/25 | 19/23 | 0.036721 | false | [report](audit/artifacts/release/arc-challenge/report/report.md) |
+
+Reading the rows:
+
+- The transfer fixture is an authored 16-item bank with 32 assigned rows, declared CC0-1.0. On the mildly skewed bank the oracle flag is true. The computed oracle still answers every item correctly. The flag depends on gold-key skew and the saved baseline.
+- The authored security/math bundle is built by `examples/external-eval/authoring.py`. Its Llama label is historical metadata on assigned answers.
+- The saved security/math bundle uses those same questions. A check against the current subject test splits found 0/20 exact matches for both security/math bundles. Their old MMLU description is unverified.
+- The statistics items matched 25/25 of the current high-school statistics rows that were checked (216 rows). The science items matched 25/25 of the current ARC-Challenge rows that were checked (1,172 rows). Those matches identify item text at verification time. They do not identify the dataset revision used when the responses were collected.
+- ARC has six missing baseline answers and two missing cue answers, so the entropy denominators are 19 and 23. The saved cue entropy is 0.159479 bits below the saved baseline. The oracle drop is 0.036721 bits, and the oracle flag is false. Those are different quantities.
+- The three saved-text bundles record local model labels: Llama-3.1-8B-Instruct for the security/math and statistics slices, and Qwen3-8B for the science slice. Requested ids are in the [catalog](data/README.md). Provider envelopes, request ids, returned snapshots, and finish reasons were not retained.
+
+Regenerate the reports with `make evidence` and the charts with `make figures`. Existing generated files are archived before replacement.
 
 ## Install and try it
 
@@ -54,12 +86,6 @@ make release
 `make check` uses bundled offline inputs and keeps its outputs in a fresh `.tmp/` directory. Evidence and figure regeneration archives existing outputs before replacement. `make release` creates a timestamped public package. Examples, evidence, and the research note are in this repository. A wheel installs the library and CLI.
 
 Historical source data is not bundled and is not needed for normal use. To run optional historical integration tests, set `EVAL_AUDIT_HISTORICAL_SOURCE` to a separately supplied authorized collection. Model collection is outside this workflow; see [collection notes](scripts/collection/README.md).
-
-## What the evidence supports
-
-The [catalog](data/catalog.json) indexes five bundles and distinguishes assigned responses from saved text with locally recorded model attribution. The named balanced subset has unverified benchmark origin. Statistics and science items have separate upstream verification receipts; model execution is not independently authenticated by those receipts.
-
-A computed gold oracle is a perfect answerer by construction. A model prompted with the answer key can still emit a wrong or missing answer. The oracle diagnostic depends on both gold keys and the saved baseline. It cannot establish deception, sandbagging, or evaluation awareness.
 
 ## Project map
 

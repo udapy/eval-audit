@@ -1,6 +1,6 @@
 # Evidence for review
 
-This page maps each saved slice to the input bytes, the audit output, and the arithmetic a reviewer can recompute. Counts and interpretation notes are in the [research note](RESEARCH-NOTE.md). Assessed model and dataset status is in the [catalog](../data/README.md).
+This page maps each saved slice to the input bytes, the audit output, and the arithmetic a reviewer can recompute. Checked counts for every comparison are in the [repository README](../README.md). Longer notes are in the [research note](RESEARCH-NOTE.md). Assessed model and dataset status is in the [catalog](../data/README.md).
 
 A completed report means the saved rows were processed. It does not establish deception, sandbagging, evaluation awareness, or model intent.
 
