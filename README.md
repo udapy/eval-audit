@@ -2,9 +2,13 @@
 
 Offline diagnostics for saved multiple-choice evaluation results. Import saved answer records, compare stored labels with parsed text, compute simple controls and item influence, and produce inspectable reports. Python 3.12+; no runtime dependencies, credentials, or model downloads.
 
-**Start here:** [research note](docs/RESEARCH-NOTE.md) · [data and models](data/README.md) · [input format](docs/INPUT-FORMAT.md) · [terminology](docs/GLOSSARY.md) · [release verification](docs/VERIFICATION.md).
+**Start here:** [evidence for review](docs/EVIDENCE.md) · [research note](docs/RESEARCH-NOTE.md) · [data and models](data/README.md) · [input format](docs/INPUT-FORMAT.md) · [terminology](docs/GLOSSARY.md) · [release verification](docs/VERIFICATION.md).
 
 ![Offline audit workflow](docs/figures/workflow.png)
+
+## Review the saved evidence
+
+The saved inputs, reports, independent arithmetic, and upstream item checks are in this repository. [Evidence for review](docs/EVIDENCE.md) maps each slice to its raw bundle and report. The [research note](docs/RESEARCH-NOTE.md) records the checked counts. Provider envelopes were not retained, so a model label in a report is a source claim. A completed audit does not establish deception, evaluation awareness, or model intent.
 
 ## Install and try it
 
