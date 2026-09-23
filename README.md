@@ -1,8 +1,8 @@
 # Eval Audit
 
-Offline diagnostics for saved multiple-choice evaluation results. Import saved answer records, compare stored labels with parsed text, compute simple controls and item influence, and produce inspectable reports. Python 3.12+; no runtime dependencies, credentials, or model downloads.
+Offline diagnostics for saved multiple-choice evaluation results. Import saved answer records, compare stored labels with parsed text, compute simple controls and item influence, and produce inspectable reports. Python 3.12+; the core has no runtime dependencies, credentials, or model downloads. Local assistant access uses an optional MCP dependency.
 
-**Start here:** [evidence for review](docs/EVIDENCE.md) · [research note](docs/RESEARCH-NOTE.md) · [data and models](data/README.md) · [input format](docs/INPUT-FORMAT.md) · [terminology](docs/GLOSSARY.md) · [release verification](docs/VERIFICATION.md).
+**Start here:** [evidence for review](docs/EVIDENCE.md) · [research note](docs/RESEARCH-NOTE.md) · [research roadmap](docs/ROADMAP.md) · [data and models](data/README.md) · [input format](docs/INPUT-FORMAT.md) · [terminology](docs/GLOSSARY.md) · [release verification](docs/VERIFICATION.md).
 
 ![Offline audit workflow](docs/figures/workflow.png)
 
@@ -65,13 +65,13 @@ Use a new output directory for each run. The CLI refuses nonempty destinations. 
 | `eval-audit audit --manifest FILE --out DIR` | Generate metrics, findings, gate results, and evidence pages |
 | `eval-audit triage --manifest FILE --out FILE` | Export a queue for human review |
 | `eval-audit check BUNDLE` | Print scoped engineering diagnostics |
-| `eval-audit check LOG --format inspect` | Import supported Inspect log fields and audit them |
-| `eval-audit check LOG --format lm-eval` | Import supported lm-evaluation-harness sample fields |
+| `eval-audit check LOG --format inspect` | Audit supported paired Inspect JSON logs |
+| `eval-audit check LOG --format lm-eval` | Audit supported paired lm-evaluation-harness JSON logs |
 | `eval-audit import-historical --source DIR --out DIR` | Optional importer for an explicitly supplied, byte-pinned historical collection |
 
 `check` exits 0 when G0/G2 have no blocking finding, 2 for blocked/invalid input, and 1 for an unexpected audit error. G1/G3 diagnostics remain advisory and G4 remains unestablished. Exit 0 is **not validation of a behavioral claim**. `audit` reports input-processing status; review its findings even when it exits 0. See [gate definitions](docs/GLOSSARY.md).
 
-Adapters support particular saved-field layouts; they are not claims of compatibility with every upstream log version. The provider client and collection scripts are optional, separate from offline replay.
+Log adapters require explicit baseline and target envelopes and support particular saved-field layouts; they are not compatible with every upstream log version. See the [service contract](docs/SERVICE.md) for supported inputs and derived-answer provenance. The provider client and collection scripts are optional, separate from offline replay.
 
 ## Reproduce this release
 
@@ -87,13 +87,22 @@ make release
 
 Historical source data is not bundled and is not needed for normal use. To run optional historical integration tests, set `EVAL_AUDIT_HISTORICAL_SOURCE` to a separately supplied authorized collection. Model collection is outside this workflow; see [collection notes](scripts/collection/README.md).
 
+## Future scope
+
+- **Interactive synthetic demo:** Add editable examples and downloadable reports so users can see how answer skew, parsing errors, and missing responses affect audit results.
+- **Paired option-order tests:** Rotate options while keeping question content fixed to measure sensitivity to answer position without confounding it with subject difficulty.
+- **Agent-trace completeness checks:** Capture tool outputs, exit codes, truncation, and model-visible context to identify missing execution evidence before interpreting an agent's behavior.
+- **Reusable control comparisons:** Add repeat baselines and matched prompt comparisons to test whether an observed change is explained by sampling variation or wording.
+
+See [planned additions](docs/ROADMAP.md) for the corresponding deliverables.
+
 ## Project map
 
 - `src/`: library and CLI; `tests/`: offline regression cases.
 - `examples/`: frozen source bundles and example-specific notes.
 - `data/`: evidence catalog, comparison tables, upstream verification receipts.
 - `audit/`: regenerated reports, independent arithmetic, and release records.
-- `docs/`: research note, format reference, glossary, and static figures. Install notes are in `docs/PACKAGE-README.md`. Local assistant setup is in `docs/MCP.md`.
+- `docs/`: research note, research roadmap, format reference, glossary, and static figures. Install notes are in `docs/PACKAGE-README.md`. Local assistant setup is in `docs/MCP.md`.
 - `scripts/`: reproduction, source verification, packaging, and optional collection.
 
 Original preparation material and pre-edit files are preserved in an excluded local archive. No archived preparation files are required to use the release.
